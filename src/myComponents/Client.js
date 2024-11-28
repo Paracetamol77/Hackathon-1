@@ -9,7 +9,7 @@ const Client = () => {
 
   const options = [
     {
-      title: "सिफारिसको लागि टोकन",
+      title: "सिफारिसको लागि टोकन11",
       description:
         "सिफारिस प्राप्त गर्न टोकन आवश्यक छ। कृपया यहाँ क्लिक गर्नुहोस्।",
       imgSrc: image3, // Replace with actual images
