@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./signup.module.css";
+import styles from "./signin.module.css";
 
-const Signup = () => {
+const Signin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   
@@ -75,7 +75,7 @@ const Signup = () => {
           className={styles.signupLink}
           onClick={(e) => {
             e.preventDefault(); // Prevent default anchor behavior
-            navigate("/login"); // Navigate to Login component
+            navigate("#"); // Navigate to Login component
           }}
         >
           Create account Click here..
@@ -85,4 +85,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Signin;
