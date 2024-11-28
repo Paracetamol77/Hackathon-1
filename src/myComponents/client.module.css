@@ -1,11 +1,12 @@
 /* Main Container */
+
 .clientContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background: linear-gradient(135deg, #f7f9fc, #eaf1f8); /* Subtle gradient */
+    background: linear-gradient(135deg, #fbfcfc, #eaf1f8); /* Subtle gradient */
     min-height: 100vh;
     font-family: 'Arial', sans-serif;
   }

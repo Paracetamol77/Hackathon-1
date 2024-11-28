@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: #f7f7f7; /* Whitish background */
+    background: #d4d4dd; /* Whitish background */
     font-family: 'Arial', sans-serif;
     color: #333; /* Darker text for contrast */
     text-align: center;
@@ -117,5 +117,5 @@ input:focus {
 }
 
 body {
-    background-color: white;
+    background:white ;    
 }

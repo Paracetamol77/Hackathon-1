@@ -7,11 +7,6 @@ import image3 from "../assets/images/image3.jpg";
 const Client = () => {
   const navigate = useNavigate();
 
-  const handleOptionClick = (option) => {
-    alert(`You selected: ${option}`);
-    // Add navigation or functionality for each option as needed
-  };
-
   const options = [
     {
       title: "सिफारिसको लागि टोकन",
@@ -53,7 +48,6 @@ const Client = () => {
             <p className={styles.cardDescription}>{option.description}</p>
             <button
               className={styles.cardButton}
-              onClick={() => handleOptionClick(option.title)}
             >
               Get token 
             </button>
