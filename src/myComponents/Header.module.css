@@ -1,0 +1,80 @@
+/* Header Container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Navigation Menu */
+  .nav {
+    display: flex;
+  }
+  
+  .navList {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation Links */
+  .navLink {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Hover Effects */
+  .navLink:hover {
+    color: #00f2fe;
+  }
+  
+  .navLink::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .navLink:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+    }
+  
+    .navList {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  
