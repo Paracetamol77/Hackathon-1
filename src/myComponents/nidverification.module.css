@@ -1,0 +1,189 @@
+/* Full-page background for this component */
+.nidBody {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, rgba(58, 123, 213, 0.8), rgba(78, 67, 204, 0.7), rgba(29, 201, 192, 0.7));
+  background-size: 200% 200%; /* Smooth gradient effect */
+  animation: gradientAnimation 5s ease infinite; /* Animate the gradient */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(15px); /* Apply blur effect to background */
+}
+
+/* Keyframes for smooth gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Parent container */
+.nidContainer {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.4); /* Semi-transparent background */
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  width: 90%; /* Responsive width */
+  min-height: 300px; /* Default height before verification */
+  max-width: 1000px;
+  transition: min-height 0.5s ease; /* Smooth height expansion */
+  backdrop-filter: blur(10px); /* Apply blur effect to the container */
+}
+
+/* Expanded container (after verification) */
+.nidContainerExpanded {
+  min-height: 400px; /* Adjusted height for token display */
+}
+
+/* Flex container for verification and suggestion sections */
+.nidSectionWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+/* NID Verification Section */
+.nidVerificationSection {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.35); /* Lighter transparency */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Balanced content */
+  backdrop-filter: blur(10px);
+}
+
+.nidHeading {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nidSubheading {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.nidForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Add spacing between form elements */
+}
+
+.nidInputField {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.2); /* Transparent input field */
+  color: #333;
+  font-size: 1rem;
+}
+
+.nidVerifyButton {
+  padding: 10px 20px;
+  background: rgba(29, 201, 192, 0.9); /* Cool teal color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nidVerifyButton:hover {
+  background: rgba(78, 67, 204, 1); /* Cool purple on hover */
+  transform: scale(1.05); /* Zoom effect */
+}
+
+/* Suggestion Section */
+.nidSuggestionSection {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.3); /* Transparent suggestion section */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle transparent border */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+}
+
+.nidSuggestionHeading {
+  font-size: 1.5rem;
+  color: rgba(78, 67, 204, 1); /* Cool purple text color */
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nidSuggestionsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nidSuggestionsList li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Token Section */
+.nidResultSection {
+  background: rgba(255, 255, 255, 0.2); /* Transparent background */
+  border: 1px dashed rgba(255, 255, 255, 0.5); /* Dashed border */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nidSuccessMessage {
+  color: #28a745;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.nidTokenContainer {
+  background: rgba(255, 255, 255, 0.2); /* Transparent token container */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.nidTokenHeading {
+  font-size: 1rem;
+  color: #333;
+}
+
+.nidToken {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #555;
+}
