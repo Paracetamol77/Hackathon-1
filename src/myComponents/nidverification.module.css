@@ -26,6 +26,18 @@
   }
 }
 
+/* Zoom-in animation */
+@keyframes zoomInAnimation {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 /* Parent container */
 .nidContainer {
   display: flex;
@@ -42,6 +54,9 @@
   max-width: 1000px;
   transition: min-height 0.5s ease; /* Smooth height expansion */
   backdrop-filter: blur(10px); /* Apply blur effect to the container */
+
+  /* Apply the zoom-in animation */
+  animation: zoomInAnimation 0.8s ease-out;
 }
 
 /* Expanded container (after verification) */
